@@ -1,0 +1,95 @@
+.githubblock {
+  @apply bg-code-top;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  // padding-left: 1.5rem;
+
+  .header {
+    display: flex;
+    position: relative;
+    padding-left: 1.5rem;
+
+    .language {
+      background-color: #ffffff;
+      margin-right: 1rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      text-transform: uppercase;
+      border-bottom-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: visible;
+      height: 3rem;
+  
+      @media (max-width: 1536px) {
+        font-size: 0.85rem;
+      }
+    }
+
+    .spacer {
+      flex-grow: 1;
+    }
+
+    .button {
+      margin-right: 1.5rem;
+      margin-top: 0.5rem;
+      margin-left: 1.0rem;
+      padding: 8px 12px;
+      background-color: #00f5c426;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      color: #E2E8F0;
+      font-size: 14px;
+      line-height: 1;
+      overflow: visible;
+      height: 2rem;
+
+      @media (max-width: 1536px) {
+        font-size: 0.7rem;
+      }
+    }
+  }
+
+  .url {
+    color: #9d9d9d;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 1rem 0 1rem;
+    font-size: 0.7rem;
+
+    a {
+      text-decoration: none !important;
+
+      @media (max-width: 1536px) {
+        font-size: 0.6rem;
+      }
+    }
+  }
+
+  .code {
+    // @apply bg-code-top;
+    @apply bg-neutral-500/10;
+    overflow: hidden;
+    border-radius: 0.5rem;
+
+    .code-wrapper {
+      background-color: transparent;
+      float: left;
+      min-width: 100%;
+      overflow: hidden;
+    }
+
+    @media (max-width: 1536px) {
+      font-size: 0.85rem;
+    }
+  }
+}
+
